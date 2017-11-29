@@ -29,6 +29,26 @@
         app:backgroundTint="@color/colorPrimary"
         app:srcCompat="@android:drawable/ic_popup_sync" />
 
-    <include layout="@layout/content_devices" />
+    <include layout="@layout/content_devices"
+        android:id="@+id/image" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="188dp"
+            android:layout_height="208dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="222dp"
+            android:layout_height="195dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:srcCompat="@mipmap/ic_launcher" />
+    </GridLayout>
 
 </android.support.design.widget.CoordinatorLayout>
